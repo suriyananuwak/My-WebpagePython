@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+article {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1, h2 {
+    color: #333;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.example, .exercise {
+    background: #e7e7e7;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+
+}
+.example code, .exercise code {
+    display: block;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    color: blue; /* เปลี่ยนสีตัวอักษรเป็นสีน้ำเงิน */
+}
+section:nth-of-type(1) code {
+    color: blue; /* เปลี่ยนสีตัวอักษรเป็นสีน้ำเงินเฉพาะส่วนคำอธิบายพื้นฐาน */
+}

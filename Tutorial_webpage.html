@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การเขียนโปรแกรมภาษา Python If...Else</title>
+    <meta name="description" content="เรียนรู้การเขียนโปรแกรมภาษา Python เบื้องต้นด้วยคำสั่ง If...Else พร้อมตัวอย่างประกอบ รูปภาพและแบบฝึกหัดที่เข้าใจง่าย">
+    <link rel="stylesheet" href="styles1.0.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-primary text-white text-center p-3">
+        <h1>การเขียนโปรแกรมภาษา Python If...Else</h1>
+    </header>
+    <article class="container my-4">
+        <section>
+            <h2>คำอธิบายพื้นฐาน</h2>
+            <p>ใน Python คำสั่ง <code>if...else</code> ใช้ในการตัดสินใจตามเงื่อนไขต่างๆ ภายในโค้ด ดังนี้:</p>
+            <ul>
+                <li><code>if</code> ใช้เพื่อตรวจสอบว่าเงื่อนไขเป็นจริงหรือไม่</li>
+                <li><code>else</code> ใช้เมื่อเงื่อนไขใน <code>if</code> ไม่เป็นจริง</li>
+            </ul>
+            <p>โครงสร้างพื้นฐานมีดังนี้:</p>
+            <div class="example">
+                <code>
+                    if เงื่อนไข:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;# ทำบางอย่างถ้าเงื่อนไขเป็นจริง<br>
+                    else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;# ทำบางอย่างถ้าเงื่อนไขไม่เป็นจริง
+                </code>
+            </div>
+        </section>
+        
+        <section>
+            <h2>ตัวอย่างการใช้งาน</h2>
+            <p>สมมติว่าคุณต้องการตรวจสอบว่าตัวเลขเป็นเลขคู่หรือเลขคี่ โค้ดจะเป็นแบบนี้:</p>
+            <div class="example">
+                <code>
+                    number = 10<br>
+                    if number % 2 == 0:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("เลขนี้เป็นเลขคู่")<br>
+                    else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("เลขนี้เป็นเลขคี่")
+                </code>
+            </div>  
+            <h2>รูปภาพประกอบ</h2> 
+            <p>สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการใช้งาน If...Else</p>   
+
+            <section>
+                <div class="position-relative text-left">
+                    <!-- ภาพที่ไม่ครอบคลุมลิงก์ -->
+                    <img src="https://via.placeholder.com/400x100?text=คลิกเพื่อดูข้อมูลเพิ่มเติม" 
+                         alt="การใช้งาน If...Else" 
+                         class="img-fluid">
+                    
+                    <!-- ข้อความที่สามารถคลิกได้ -->
+                    <a href="https://krupitchayathinking.blogspot.com/p/if-else.html" target="_blank" class="position-absolute top-0 start-0 d-flex justify-content-left align-items-left" style="text-decoration: none;">
+                        <p class="bg-gray px-4 py-1 rounded fs-4 fw-normal" style="color: rgb(0, 0, 153);">
+                            ดูรูปภาพประกอบภาษาไพทอน
+                        </p>
+                    </a>
+                </div>
+            </section>
+             <br>
+            <div class="row">
+                <div class=" col-lg-6 col-sm-12 bg-light p-3 fs-5">
+                 <p>การเชื่อมโยงเเหล่งความรู้ If...Else </p>  
+                </div>
+                <div class="col-lg-6 col-sm-12 bg-info p-3">
+                    <p><a href="https://www.w3schools.com/python/python_conditions.asp" target="_blank" class="text-white">W3Schools ของ Python </a></p>
+                    <p><a href="https://youtu.be/l-1a8dYcUrg?si=Jt6CvzmMJkT5nCpL" target="_blank" class="text-white">youtube ของ Python</a></p>                    
+            </div>
+        </section>
+
+        <section>
+            <h2>แบบฝึกหัด</h2>
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 bg-primary text-white p-3 exercise">
+                    <p>ตรวจสอบตัวเลขเป็นบวกหรือลบ:</p>
+                    <code>
+                        number = -1<br>
+                        if number > 0:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print("ตัวเลขเป็นบวก")<br>
+                        else:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print("ตัวเลขเป็นลบ")
+                    </code>
+                </div>
+                <div class="col-lg-4 col-sm-12 bg-success text-white p-3 exercise">
+                    <p>ตรวจสอบเกรดของนักศึกษา:</p>
+                    <code>
+                        score = 85<br>
+                        if score >= 90:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;grade = "A"<br>
+                        elif score >= 80:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;grade = "B"<br>
+                        elif score >= 70:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;grade = "C"<br>
+                        elif score >= 60:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;grade = "D"<br>
+                        else:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;grade = "F"<br>
+                        print("เกรดของนักศึกษาคือ", grade)
+                    </code>
+                </div>
+                <div class="col-lg-4 col-sm-12 bg-warning text-dark p-3 exercise">
+                    <p>ตรวจสอบอายุเพื่อเข้าเรียน:</p>
+                    <code>
+                        Age = 18<br>
+                        if age >= 15:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print("นักศึกษาสามารถเข้าร่วมเรียนได้")<br>
+                        else:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print("นักศึกษาไม่สามารถเข้าร่วมเรียนได้")
+                    </code>
+                </div>
+            </div>
+        </section>
+    </article>
+    <footer class="text-center bg-secondary text-white p-3">
+        <p>&copy; 2025 Tutorial Python | <a href="#" class="text-info">Back to top</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
